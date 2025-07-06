@@ -1,0 +1,25 @@
+{
+  "name": "Design Token Exporter",
+  "id": "design-token-exporter",
+  "api": "1.0.0",
+  "editorType": ["figma"],
+  "main": "code.js",
+  "ui": "ui.html",
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "api.github.com",
+      "github.com",
+      "*.github.com",
+      "raw.githubusercontent.com"
+    ],
+    "reasoning": "Access GitHub API for repository integration and token synchronization"
+  },
+  "permissions": ["currentuser"],
+  "menu": [
+    {
+      "name": "Export Design Tokens",
+      "command": "export-tokens"
+    }
+  ]
+}
